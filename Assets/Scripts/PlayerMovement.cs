@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private TopDownController controller;
     private Rigidbody2D rigd;
-    private float Speed = 10f;
+    private float Speed = 5f;
 
     private Vector2 MovementDirection = Vector2.zero; // 시작하는 기본위치 = 계속해서 바뀔 플레이어의 현재 위치
 
