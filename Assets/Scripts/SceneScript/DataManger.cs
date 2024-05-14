@@ -8,6 +8,8 @@ public class DataManger : MonoBehaviour
     public static DataManger Instance;
 
     public string username;
+    public int characterNum;
+
     private void Awake()
     {
         if (Instance == null)

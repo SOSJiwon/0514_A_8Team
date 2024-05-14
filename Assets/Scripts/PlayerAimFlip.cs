@@ -11,14 +11,18 @@ public class PlayerAimFlip : MonoBehaviour
 
     private TopDownController controller;
 
+    public GameObject[] characters;
+
     private void Awake()
     {
         controller = GetComponent<TopDownController>();
+        //spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
     private void Start()
     {
         controller.OnLookEvent += Aim;
+        characters[DataManger.Instance.characterNum].SetActive(true);
     }
 
     private void Aim(Vector2 vector)

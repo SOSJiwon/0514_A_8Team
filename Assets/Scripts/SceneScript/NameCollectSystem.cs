@@ -1,12 +1,24 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class NameCollectSystem : MonoBehaviour
 {
     public TMP_InputField inputField;
+
+    public Sprite[] characterSprite;
+
+    public Image seletedChracter;
+
+    public void ChoiceCharacter(int num)
+    {
+        seletedChracter.sprite = characterSprite[num];
+        DataManger.Instance.characterNum = num;
+    }
 
     public void OnClickBtn()
     {
