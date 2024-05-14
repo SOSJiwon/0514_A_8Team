@@ -30,7 +30,7 @@ public class PlayerAimFlip : MonoBehaviour
     {
         float rotZ = Mathf.Atan2(vector.y, vector.x)*Mathf.Rad2Deg;
 
-        spriteRenderer.flipX = Mathf.Abs(rotZ) > 90f;
+        spriteRenderer.flipX = Mathf.Abs(rotZ) < 90f;
 
     }
 }

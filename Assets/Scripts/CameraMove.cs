@@ -2,7 +2,6 @@
 
 public class CameraMove : MonoBehaviour
 {
-    private TopDownController controller;
     private Camera camera;
 
     [SerializeField] private Transform target;
@@ -12,7 +11,6 @@ public class CameraMove : MonoBehaviour
     private void Awake()
     {
         camera = GetComponent<Camera>();
-        controller = GetComponent<TopDownController>();
     }
 
     private void Update()
